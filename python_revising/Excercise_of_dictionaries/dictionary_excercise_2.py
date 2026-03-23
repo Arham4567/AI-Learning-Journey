@@ -16,7 +16,37 @@ stock_prices={
     "ril": [1430,1490,1567],
     "mtl": [234,180,160]
 }
+def print_stocks(stocks):
+    for tickers,p in stock_prices.items():
+        avg=float(sum(stock_prices[tickers])/len(stock_prices[tickers]))
+        print(tickers,"==>",p,"avg:",avg)
 
-for tickers,p in stock_prices.items():
-    avg=float(sum(stock_prices[tickers])/len(stock_prices[tickers]))
-    print(tickers,"==>",p,"avg:",avg)
+def add_stocks(stocks):
+    ticker=input("Enter the ticker: ")
+    price=float(input("Enter the price: "))
+    if ticker in stocks:
+        stocks[ticker].append(price)
+        print_stocks(stocks)
+    else:
+        stocks[ticker]=[price]
+        print_stocks(stocks)
+
+def choices(choic):
+    if choic=="print":
+        print_stocks(stock_prices)
+    elif choic=="add":
+        add_stocks(stock_prices)
+    else:
+        print("Invalid choice")
+
+
+if __name__ == '__main__':
+    x="1"
+    while x != "ok":
+        choice = input("Enter the operation you wanna perform ,print,add on a given dataset ")
+        choice = choice.lower()
+        choices(choice)
+        if choice == "ok":
+            x="ok"
+            print("program terminated")
+

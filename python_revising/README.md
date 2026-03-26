@@ -10,6 +10,11 @@ To strengthen core programming concepts that are essential for Artificial Intell
 - Dictionaries
 - File Handling
 - Classes & Objects
+- Inheritance
+- Multiple Inheritance 
+- Raising Exceptions 
+- Iterators 
+- Generators
 - (More topics will be added as I progress)
 
 ## 🛠 What I’m Doing Here

@@ -15,6 +15,9 @@ To strengthen core programming concepts that are essential for Artificial Intell
 - Raising Exceptions 
 - Iterators 
 - Generators
+- list_set_dict_comprehension
+- sets_frozensets
+- argparse
 - (More topics will be added as I progress)
 
 ## 🛠 What I’m Doing Here

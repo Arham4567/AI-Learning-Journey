@@ -9,6 +9,7 @@ This repository contains my journey of learning Artificial Intelligence, Machine
 
 ## 📂 Structure
 - Python-Basics/
+- Data-Structures
 - Projects/
 
 ## 🎯 Goal
